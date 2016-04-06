@@ -24,7 +24,7 @@ include('amazon.inc.php'); // include the functions
 $files_to_upload = array(); //create an array to hold the files you want to upload
 
 $files_to_upload[] = array('monkey.jpg','monkey.jpg'); // add files to your array (local filename , remote filename on s3)
-$files_to_upload[] = array('monkey2.jpg','monkey.jpg');
+$files_to_upload[] = array('monkey2.jpg','monkey2.jpg');
 
 uploadToS3( $s3Client, $bucket, $files_to_upload ); //call upload.
 
